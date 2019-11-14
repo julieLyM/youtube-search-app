@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import VideoItem from "./VideoItem";
 
 function VideoList({ videos, videoPlay }) {
@@ -10,5 +12,10 @@ function VideoList({ videos, videoPlay }) {
     </div>
   );
 }
+
+VideoList.propTypes = {
+  videos: PropTypes.array,
+  videoPlay: PropTypes.func
+};
 
 export default VideoList;

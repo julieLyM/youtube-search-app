@@ -1,5 +1,5 @@
 import React from "react";
-import debounce from 'lodash.debounce'
+import debounce from "lodash.debounce";
 
 import AppTitle from "./AppTitle";
 import SearchBar from "./SearchBar";
@@ -61,4 +61,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
