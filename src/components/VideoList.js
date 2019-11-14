@@ -1,11 +1,12 @@
 import React from "react";
 import VideoItem from "./VideoItem";
 
-function VideoList() {
+function VideoList({ videos, videoPlay }) {
   return (
     <div>
-      Component VideoList
-      <VideoItem />
+      {videos.map(video => (
+        <VideoItem key={video.id} video={video} videoPlay={videoPlay} />
+      ))}
     </div>
   );
 }

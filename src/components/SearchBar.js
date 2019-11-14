@@ -1,9 +1,9 @@
 import React from "react";
 
-function SearchBar() {
+function SearchBar({ onQueryChange }) {
   return (
     <div>
-      <input></input>
+      <input onChange={onQueryChange}></input>
     </div>
   );
 }

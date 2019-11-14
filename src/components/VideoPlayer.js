@@ -1,7 +1,12 @@
 import React from "react";
 
-function VideoPlayer() {
-  return <div>Component VideoPlayer</div>;
+function VideoPlayer({ video, id }) {
+  return (
+    <div>
+      <h2>Component VideoPlayer</h2>
+      <iframe src={`https://www.youtube.com/embed/${id}`} />
+    </div>
+  );
 }
 
 export default VideoPlayer;
